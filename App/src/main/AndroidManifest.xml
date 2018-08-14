@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    //** 权限**//
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission
+        android:name="android.permission.CLEAR_APP_CACHE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name=".base.GApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/appstore"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.Activity.other.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.example.library.SearchView.db.HistoryProvider"
+            android:authorities="com.example.library.SearchView.searchhistorydatabase"
+            android:exported="false"
+            android:protectionLevel="signature"
+            android:syncable="true" />
+
+        <activity android:name=".ui.Manage.MemoryCleanActivity" />
+        <activity android:name=".ui.Manage.SoftwareManageActivity" />
+        <activity android:name=".ui.Manage.RubbishCleanActivity" />
+        <activity android:name=".ui.Apps.AppsActivity" />
+        <activity
+            android:name=".ui.Activity.other.MainActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.Activity.other.ScanningActivity" />
+        <activity android:name=".ui.Activity.download.DownloadAllActivity" />
+        <activity android:name=".ui.Activity.download.DownloadFinishActivity" />
+        <activity
+            android:name=".ui.Center.DataActivity"
+            android:theme="@style/Trans"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" />
+        <activity
+            android:name=".ui.Activity.download.DownloadtaskActivity"
+            android:theme="@style/Trans" />
+        <activity
+            android:name=".ui.Activity.other.LoginActivity"
+            android:theme="@style/Trans"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" />
+        <activity
+            android:name=".ui.Center.MallActivity"
+            android:theme="@style/Trans" />
+        <activity
+            android:name=".ui.Center.SpreadActivity"
+            android:theme="@style/Trans" />
+        <activity
+            android:name=".ui.Center.PurchaseActivity"
+            android:theme="@style/Trans" />
+        <activity
+            android:name=".ui.Center.AboutActivity"
+            android:theme="@style/Trans" />
+        <activity
+            android:name=".ui.Center.VersionUpActivity"
+            android:theme="@style/Trans" />
+        <activity
+            android:name=".ui.Center.FeedBackActivity"
+            android:theme="@style/Trans"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" />
+        <activity
+            android:name=".ui.Center.SettingActivity"
+            android:theme="@style/Trans" />
+
+        //** 注册服务**//
+        <service
+            android:name=".service.UpdateService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":push" />
+
+        <service
+            android:name=".service.CoreService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.CleanService"
+            android:enabled="true"
+            android:exported="true" />
+
+        //** 注册广播**//
+        <receiver
+            android:name=".receiver.BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".receiver.NotificationReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="UPDATE_INFO" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".receiver.NotificationIntentReceiver"
+            android:enabled="true"
+            android:exported="true">
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,34 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">AppStroe</string>
+    <string name="task">下载任务</string>
+    <string name="notask">无下载任务</string>
+    <string name="names">宁波瑞泽西医疗科技有限公司</string>
+    <string name="change">修改密码</string>
+    <string name="back">返回</string>
+    <string name="welcome">欢迎使用</string>
+    <string name="login">登录</string>
+    <string name="QR_code">扫一扫,立马分享</string>
+    <string name="purchase">暂无购买记录</string>
+    <string name="copy">Copyright © 2018 Ruizex.All Rights Reserved.</string>
+    <string name="copy_ch">瑞泽西公司版权所有</string>
+    <string name="update_tips">版本更新</string>
+    <string name="update_tips2">正在下载安装包，请稍后...</string>
+    <string name="in_WLAN">WLAN下自动安装</string>
+    <string name="in_WLAN_tips">WLAN下自动下载并安装应用</string>
+    <string name="in_WLAN_update">WLAN闲时自动更新</string>
+    <string name="in_WLAN_update_tips">空闲条件:WLAN网络下,CPU使用率低于80%，电量高于30%</string>
+    <string name="update_notice">应用更新通知免打扰</string>
+    <string name="notice">通知栏不显示通知应用更新信息</string>
+    <string name="stop_service">停止应用商店服务</string>
+    <string name="history_version">历史版本</string>
+    <string name="noLogin">未登录</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cleaned">清理垃圾 (<xliff:g id="memory">%1$s</xliff:g>)</string>
+    <string name="scanning">扫描中…</string>
+    <string name="scanning_m_of_n">扫描中 %1$d/%2$d</string>
+    <string name="software_top_text">已安装%1$s款软件,占有存储空间%2$s</string>
+    <string name="title_activity_setting">设置界面</string>
+
+</resources>

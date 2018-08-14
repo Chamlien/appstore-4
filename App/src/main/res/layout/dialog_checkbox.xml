@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:paddingRight="50dp"
+    android:orientation="vertical"
+    android:id="@+id/dialog_check">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="1个(默认)"/>
+        <com.example.library.Animation.CheckBoxSample
+            android:id="@+id/check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            app:color_background="#FF3F51B5"
+            app:color_border="#FF3F51B5"
+            app:size="32dp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="2个"/>
+        <com.example.library.Animation.CheckBoxSample
+            android:id="@+id/check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:color_background="#FF4CAF50"
+            android:layout_marginLeft="100dp"
+            app:color_border="#FF4CAF50"
+            app:size="32dp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="3个"/>
+        <com.example.library.Animation.CheckBoxSample
+            android:id="@+id/check3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:color_background="#FFFF5722"
+            android:layout_marginLeft="100dp"
+            app:color_border="#FFFF5722"
+            app:size="32dp" />
+    </TableRow>
+
+</LinearLayout>

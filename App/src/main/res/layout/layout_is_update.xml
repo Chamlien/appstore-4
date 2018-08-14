@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="200dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        style="@style/text_black"
+        android:text="@string/update_tips"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        style="@style/text_black"
+        android:text="@string/update_tips2"/>
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="20dp">
+
+        <com.example.myapplication.widget.circleprogress.HorizontalProgressBarWithNumber
+            android:id="@+id/isUpdate_progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/isUpdate_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/isUpdate_progressBar"
+            android:layout_marginTop="8dp"
+            android:text="0kb/s"
+            android:textColor="@color/black"
+            />
+
+
+        <TextView
+            android:id="@+id/isUpdate_fileSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/isUpdate_progressBar"
+            android:layout_alignTop="@+id/isUpdate_speed"
+            android:text="0mb/0mb"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+</LinearLayout>

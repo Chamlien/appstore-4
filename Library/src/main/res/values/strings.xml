@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MaterialSearchBar</string>
+    <string name="action_search">Search</string>
+    <string name="welcome">康复系统应用商店</string>
+    <string name="scan">检测内存数据中，请稍后....</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="action_placeholder">Your App Name</string>
+    <string name="cd_suggestion_icon">List item icon</string>
+    <string name="cd_up_button">Up navigation button</string>
+    <string name="cd_voice_search">Voice search</string>
+    <string name="cd_clear_button">Clear field</string>
+    <string name="search_hint">Search&#8230;</string>
+    <string name="hint_prompt">Speak an item name or a number</string>
+
+    //Back Arrow Path Data
+    <string name="back_vector_path" translatable="false">M50 25,L80 50,M20 50,L80 50,M50 75,L80 50</string>
+    //Menu Path Data
+    <string name="menu_vector_path" translatable="false">M20 30,L80 30,M20 50,L80 50,M20 70,L80 70</string>
+</resources>
